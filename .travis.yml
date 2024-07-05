@@ -1,0 +1,15 @@
+language: php
+php:
+  - '8.3.8'
+
+branches:
+  only:
+    - main
+
+before_install: "curl -o https://getcomposer.org/installer | bash"
+
+# CI 실행 완료 시 메일로 알람
+notifications:
+  email:
+    recipients:
+      - noonihq@gmail.com
